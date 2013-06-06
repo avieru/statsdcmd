@@ -1,5 +1,8 @@
 #statsdcmd
-A lightweight command line client for statsd.net and statsd.
+A lightweight command line client for statsd.net and statsd. Useful for:
+* Logging stats on batch jobs
+* Integrating with scripted workflows like source code builds, to measure frequency and latency
+* Integrating with Powershell
 
 ## Download
 [statsdcmd.exe](https://github.com/lukevenediger/statsdcmd/blob/master/downloads/statsdcmd.exe?raw=true) - 67kb
