@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>StatsdCsharpClient</id>
+    <version>1.0.1.0</version>
+    <title>Simple Statsd Client for .Net 3.5, 4.0 and 4.5</title>
+    <authors>Luke Venediger</authors>
+    <owners>Luke Venediger</owners>
+    <projectUrl>https://github.com/lukevenediger/statsd-csharp-client/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The simple statsd client for .Net is a robust, easy-to-use way of feeding metrics into a statsd-compatible server. You can use it to log counts, timings and gauges.
+		
+		Features include:
+		* Log counts, timings and gauges
+		* Has an additional API that uses dynamics to create and submit stats
+		* Fault-tolerant client that can be configured to fail silently (with a warning) if misconfigured
+		* IStatsdClient interface for easy mocking in unit tests
+		* Allows for customisation of every output stat to do things like screen metrics before sending
+		* Supports a user-defined prefix to prepend to every metric		
+
+    .Net 4.0 and 4.5 Users:
+    * Use the StatsdExtensions to define metrics without having to manipulate strings
+    * The dynamic stats builder interface provides a cleaner alternative to creating and logging metrics
+
+    Licence: MIT</description>
+    <summary>A simple c# client library for statsd and statsd.net</summary>
+    <releaseNotes>Maintenance Release:
+      * Added support for .net 3.5 and .net 4.0 users</releaseNotes>
+    <copyright>Copyright 2013 Luke Venediger</copyright>
+    <language />
+    <tags>statsd statsd.net graphite etsy metrics</tags>
+    <references>
+      <reference file="StatsdClient.dll" />
+    </references>
+  </metadata>
+</package>

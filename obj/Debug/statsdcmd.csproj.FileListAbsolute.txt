@@ -1,0 +1,8 @@
+C:\Luke\statsdcmd\bin\Debug\CommandLineStatsClient.exe.config
+C:\Luke\statsdcmd\obj\Debug\CommandLineStatsClient.exe
+C:\Luke\statsdcmd\obj\Debug\CommandLineStatsClient.pdb
+C:\Luke\statsdcmd\bin\Debug\CommandLineStatsClient.exe
+C:\Luke\statsdcmd\bin\Debug\CommandLineStatsClient.pdb
+C:\Luke\statsdcmd\bin\Debug\StatsdClient.dll
+C:\Luke\statsdcmd\bin\Debug\CommandLine.xml
+C:\Luke\statsdcmd\obj\Debug\statsdcmd.csprojResolveAssemblyReference.cache
