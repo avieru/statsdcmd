@@ -19,6 +19,16 @@ namespace CommandLineStatsClient
       if (Parser.Default.ParseArgumentsStrict(args, options))
       {
         var client = new Statsd(options.Host, options.Port, rethrowOnError : true);
+        if ((options.Count || options.Gauge || options.Timing)
+          && String.IsNullOrEmpty(options.RawData))
+        {
+          Console.WriteLine("Cannot send raw data and specify a metric type in the same command. See statsdcmd --help.");
+        } 
+        if (!String.IsNullOrEmpty(options.RawData))
+        {
+          UDPClient.SendRaw(options.Host, options.Port, options.RawData);
+          return;
+        }
         if (options.Count)
         {
           client.LogCount(options.Name, options.Value);

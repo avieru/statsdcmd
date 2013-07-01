@@ -20,10 +20,12 @@ namespace CommandLineStatsClient
     public bool Timing { get; set; }
     [Option('g', "gauge", MutuallyExclusiveSet = "gauge", Required = false, HelpText="Log a gauge")]
     public bool Gauge { get; set; }
-    [Option('n', "name", Required = true, HelpText = "The name of the stat to be logged.")]
+    [Option('n', "name", Required = false, HelpText = "The name of the stat to be logged.")]
     public string Name { get; set;}
     [Option('v', "value", Required = false, DefaultValue = 1, HelpText = "The value to log")]
     public int Value { get; set; }
+    [Option('r', "raw", Required = false, HelpText = "Raw data to send to statsd (via UDP only).")]
+    public string RawData { get; set; }
 
     [HelpOption]
     public string GetUsage()
