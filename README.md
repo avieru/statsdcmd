@@ -21,6 +21,7 @@ statsdcmd.exe -h statsdnet -p 12000 -c -n build.filesCopied -v 1230
 * -g | --gauge - log a gauge
 * -n | --name - the namespace of the metric
 * -v | --value - the value of the metric (default: 1)
+* -r | --raw - send raw data to statsd.net (can't be used with -c, -t, -g)
 
 ## See Also
 * [statsd.net](https://github.com/lukevenediger/statsd.net)
