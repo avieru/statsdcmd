@@ -1,5 +1,11 @@
 #statsdcmd
-A lightweight command line client for statsd.net and statsd.
+A lightweight command line client for statsd.net and statsd. Useful for:
+* Logging stats on batch jobs
+* Integrating with scripted workflows like source code builds, to measure frequency and latency
+* Integrating with Powershell
+
+## Download
+[statsdcmd.exe](https://github.com/lukevenediger/statsdcmd/blob/master/downloads/statsdcmd.exe?raw=true) - 67kb
 
 ## Usage
 Logging a count to a host called statsdnet on port 12000
@@ -15,7 +21,8 @@ statsdcmd.exe -h statsdnet -p 12000 -c -n build.filesCopied -v 1230
 * -g | --gauge - log a gauge
 * -n | --name - the namespace of the metric
 * -v | --value - the value of the metric (default: 1)
+* -r | --raw - send raw data to statsd.net (can't be used with -c, -t, -g)
 
 ## See Also
-* (statsd.net)[https://github.com/lukevenediger/statsd.net]
-* (statsd)[https://github.com/etsy/statsd/]
+* [statsd.net](https://github.com/lukevenediger/statsd.net)
+* [statsd](https://github.com/etsy/statsd/)
